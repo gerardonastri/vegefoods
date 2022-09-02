@@ -1,0 +1,35 @@
+
+.products__categories{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.products__category{
+    font-size: 18px;
+    color: var(--color-green-1);
+    font-weight: 500;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.products__category.selected{
+    background-color: var(--color-green-1);
+    color: white;
+    border-radius: 5px;
+}
+
+.Mui-selected {
+    background: var(--color-green-1) !important;
+    color: white !important;
+}
+.MuiButtonBase-root{
+    border: 1px solid #e6e6e6 !important; 
+    font-size: 18px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+}

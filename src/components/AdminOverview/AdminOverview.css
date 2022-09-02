@@ -1,0 +1,112 @@
+.adminOverview{
+    flex: 9;
+    padding: 0 20px;
+}
+.adminOverview__top, .adminOverview__bottom{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+.adminOverview__top-item{
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px -10px rgb(0 0 0 / 75%);
+}
+.adminOverview__top-item h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.adminOverview__top-item span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.adminOverview__bottom-admins{
+    flex: 3;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px -10px rgb(0 0 0 / 75%);
+}
+.adminOverview__bottom-messages{
+    flex: 6;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px -10px rgb(0 0 0 / 75%);
+}
+.adminOverview__bottom-admin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.adminOverview__bottom-admin img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.adminOverview__bottom-admin a{
+    background-color: #eeeef7;
+    color: #555;
+    padding: 8px;
+    border-radius: 1rem;
+    font-size: 14px;
+    cursor: pointer;
+}
+.adminOverview__bottom-messages_titles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.adminOverview__bottom-messages_titles span{
+    flex: 1;
+    font-weight: 600;
+    font-size: 17px;
+}
+.email{
+    flex: 1.5 !important;
+}
+
+.adminOverview__bottom-messages-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.adminOverview__bottom-messages-item span{
+    flex: 1;
+    font-size: 15px;
+}
+.admin__date{
+    color: gray;
+}
+.status{
+    background-color: #ebf1fe;
+    color: #2a7ade;
+    padding: 5px 8px;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .adminOverview__bottom{
+        flex-direction: column;
+    }
+    .adminOverview__bottom-messages{
+        flex: 1;
+    }
+    .email{
+        display: none;
+    }
+    .adminOverview__bottom-admins{
+        flex: 1;
+        width: 100%;
+    }
+    .adminOverview__top{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,86 @@
+.adminData{
+    flex: 9;
+    padding: 0 20px;
+}
+.adminData > a{
+    background-color: var(--color-green-1);
+    color: white;
+    padding: 8px 30px;
+    font-size: 16px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.adminData__table{
+    border-top: 1px solid #000;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+.adminData__table-titles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(221, 220, 220);
+    padding-bottom: 10px;
+}
+.adminData__table-titles span{
+    flex: 1;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+}
+.adminData__table-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(221, 220, 220);
+    padding-bottom: 10px;
+}
+.adminData__table-data > span{
+    flex: 1;
+    font-size: 15px;
+    text-align: center;
+}
+.password{
+    flex: 1.5;
+}
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.actions__edit{
+    background-color: var(--color-green-1);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.actions__delete{
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .adminData{
+        margin-bottom: 50px;
+    }
+    .adminData__table-titles{
+        display: none;
+    }
+    .adminData__table-data{
+        flex-direction: column;
+    }
+}

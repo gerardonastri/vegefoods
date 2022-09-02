@@ -1,0 +1,125 @@
+.about__content{
+    background-color: #f7f6f2;
+    padding-bottom: 50px;
+}
+
+.about__content .wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.videoPlayer{
+    position: relative;
+    width: 475px;
+    height: 550px;
+}
+.videoPlayer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+.videoPlayer span{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--color-green-1);
+    padding: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.videoPlayer svg{
+    font-size: 40px;
+    color: white;
+}
+.about__info{
+    padding-top: 100px;
+    flex: 1;
+}
+.about__info h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 30px;
+}
+.about__info p{
+    font-size: 15px;
+    color: gray;
+}
+.about__info button{
+    margin-top: 20px;
+    background-color: var(--color-green-1);
+    color: white;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.4s ease;
+}
+.about__info button:hover{
+    background-color: transparent;
+    border: 1px solid var(--color-green-1);
+    color: var(--color-green-1);
+}
+
+.about .overlay{
+    background-color: black !important;
+    opacity: 0.9 !important;
+    position: fixed;
+    height: 100vh;
+    z-index: 20;
+}
+.about .video{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+.about .video video{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.closeVideo{
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    z-index: 899;
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+   .about__content .wrapper{
+    flex-direction: column;
+   } 
+   .videoPlayer{
+     width: 100%;
+     height: 400px;
+    }
+    .about__info{
+        padding-top: 50px;
+        text-align: center;
+    }
+    .about__info p{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .about__info h1{
+        font-size: 1.8rem;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

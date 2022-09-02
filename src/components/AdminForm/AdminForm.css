@@ -1,0 +1,67 @@
+.adminForm{
+    flex: 9;
+    padding: 0 20px;
+}
+.adminForm__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.adminForm__wrapper > h1{
+    color: var(--color-green-1);
+    margin-bottom: 20px;
+}
+.adminForm__form{
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+.adminForm__form-formGroup{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.adminForm__form label{
+    font-size: 14px;
+    color: gray;
+}
+.adminForm__form input, .adminForm__form textarea{
+    width: 500px;
+    padding: 15px 10px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 1rem;
+    outline-color: var(--color-green-1);
+}
+.adminForm__form-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.adminForm__form-btn button{
+    background-color: var(--color-green-1);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.1s ease-in;
+}
+.adminForm__form-btn button:hover{
+    color: var(--color-green-1);
+    background-color: white;
+    border: 1px solid var(--color-green-1);
+}
+
+@media screen and (max-width: 700px) {
+    .adminForm__form{
+        width: 100%;
+    }
+    .adminForm{
+        margin-bottom: 80px;
+    }
+    .adminForm__form input, .adminForm__form textarea{
+        width: 100%;
+    }
+}

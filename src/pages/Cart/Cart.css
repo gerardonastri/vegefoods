@@ -1,0 +1,79 @@
+.cart .wrapper{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper table{
+    border: none;
+    border-spacing: 0px;
+}
+.wrapper thead{
+    background-color: var(--color-green-1);
+    padding: 20px;
+    border: none;
+}
+.wrapper th{
+    padding: 20px 10px;
+    border: 1px solid transparent!important;
+    color: white;
+}
+
+.cart__img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart__img img{
+    width: 60%;
+    height: 50%;
+}
+.wrapper tbody{
+    padding: 0 30px;
+}
+.wrapper td{
+    padding: 0 20px;
+}
+.cart__remove span{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    font-size: 14px;
+}
+.cart__name{
+    text-align: center;
+}
+.cart__name h3{
+    font-weight: 500;
+}
+.cart__name p{
+   color: gray;
+   font-size: 15px;
+}
+.cart__quantity span{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 60px;
+    font-size: 14px;
+}
+.wrapper tbody tr td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+@media screen and (max-width: 700px) {
+    .wrapper thead th:nth-child(2), .wrapper tbody td:nth-child(2) {
+        display: none;
+    }
+    .cart__name p{
+        display: none;
+    }
+    .wrapper tbody td{
+        padding: 10px 20px ;
+    }
+    
+}

@@ -1,0 +1,36 @@
+
+.blogDetails .wrapper{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    gap: 50px;
+}
+.blogDetails__container{
+    flex: 2;
+}
+
+.blogDetails__content h1{
+    font-weight: 400;
+}
+.blogDetails__content p{
+    color: gray;
+    font-size: 15px;
+    margin: 40px 0;
+}
+.blogDetails__content img{
+    max-width: 750px;
+}
+
+@media screen and (max-width: 700px) {
+    .blogDetails .wrapper{
+        flex-direction: column;
+        padding: 0 20px;
+        padding-top: 50px;
+        gap: 50px;
+    }
+    .blogDetails__content img{
+        max-width: 95%;
+        max-height: 600px;
+    }
+}

@@ -1,0 +1,30 @@
+.container{
+
+}
+.admin__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+.admin__navbar h2{
+    margin: 0;
+    color: darkblue;
+    font-weight: bold;
+}
+.admin__navbar-links svg{
+    margin-right: 3px;
+    color: gray;
+    cursor: pointer;
+}
+
+.admin__wrapper{
+    display: flex;
+}
+
+@media screen and (max-width: 700px) {
+    .admin__wrapper{
+        flex-direction: column-reverse;
+    }   
+}
