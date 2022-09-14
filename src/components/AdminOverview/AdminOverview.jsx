@@ -11,7 +11,6 @@ const AdminOverview = () => {
   useEffect(() => {
     const getData = async () => {
       const res = await axiosReq.get('admin/info');
-      console.log(res.data);
       setUsers(res.data.users)
       setProducts(res.data.products)
       setPosts(res.data.posts)
