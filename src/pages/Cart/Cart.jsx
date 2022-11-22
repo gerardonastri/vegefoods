@@ -7,6 +7,8 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react'
 import { axiosReq } from '../../utils/apiCalls'
 import {useSelector} from 'react-redux'
+import img1 from '../../images/featured-1.webp'
+
 
 const Cart = () => {
 //   const id = useLocation().pathname.split('/')[2]
@@ -17,7 +19,7 @@ const Cart = () => {
     <div className='cart'>
         <Navbar />
         <div className="shop__hero">
-            <img src="https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp" alt="" />
+            <img src={img1} alt="" />
             <h1>Cart</h1>
         </div>
         <div className="wrapper">

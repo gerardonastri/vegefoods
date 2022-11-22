@@ -6,6 +6,8 @@ import Newsletter from '../../components/Newsletter/Newsletter'
 import BlogSidebar from '../../components/BlogSidebar/BlogSidebar'
 import { useLocation } from 'react-router-dom'
 import { axiosReq } from '../../utils/apiCalls'
+import img1 from '../../images/featured-1.webp'
+
 
 const BlogDetails = () => {
     const [data, setData] = useState(null)
@@ -28,7 +30,7 @@ const BlogDetails = () => {
     <div className=''>
         <Navbar />
         <div className="shop__hero">
-            <img src="https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp" alt="" />
+            <img src={img1} alt="" />
             <h1>blog</h1>
         </div>
         <div className="blogDetails">

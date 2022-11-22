@@ -4,6 +4,11 @@ import {MdLocalShipping} from 'react-icons/md'
 import {MdFoodBank} from 'react-icons/md'
 import {FaAward} from 'react-icons/fa'
 import {MdSupportAgent} from 'react-icons/md'
+import img1 from '../../images/category-1.webp'
+import img2 from '../../images/category-2.webp'
+import img3 from '../../images/category-3.webp'
+import img4 from '../../images/category-4.webp'
+import img5 from '../../images/category-5.webp'
 
 const Categories = () => {
   return (
@@ -34,11 +39,11 @@ const Categories = () => {
             <div className="categories__container">
                 <div className="categories__container-block">
                     <div className="categories__container-item">
-                        <img src="https://preview.colorlib.com/theme/vegefoods/images/xcategory-1.jpg.pagespeed.ic.alxe1GXuAu.webp" alt="" />
+                        <img src={img1} alt="" />
                         <a href="/">Fruits</a>
                     </div>
                     <div className="categories__container-item">
-                        <img src="https://preview.colorlib.com/theme/vegefoods/images/xcategory-2.jpg.pagespeed.ic.5035OoKGCA.webp" alt="" />
+                        <img src={img2} alt="" />
                         <a href="/">Vegetables</a>
                     </div>
                 </div>
@@ -50,15 +55,15 @@ const Categories = () => {
                             <button>Shop Now</button>
                         </div>
                     </div>
-                    <img src="https://preview.colorlib.com/theme/vegefoods/images/xcategory.jpg.pagespeed.ic.JIYFOwf8jy.webp" alt="" />
+                    <img src={img5} alt="" />
                 </div>
                 <div className="categories__container-block">
                     <div className="categories__container-item">
-                        <img src="https://preview.colorlib.com/theme/vegefoods/images/xcategory-3.jpg.pagespeed.ic.IebYHvpTTo.webp" alt="" />
+                        <img src={img3} alt="" />
                         <a href="/">Juices</a>
                     </div>
                     <div className="categories__container-item">
-                        <img src="https://preview.colorlib.com/theme/vegefoods/images/xcategory-4.jpg.pagespeed.ic.mstLsR7ycw.webp" alt="" />
+                        <img src={img4} alt="" />
                         <a href="/">Dried</a>
                     </div>
                 </div>

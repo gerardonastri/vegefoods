@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import { useState } from 'react'
 import {axiosReq} from '../../utils/apiCalls'
+import img1 from '../../images/featured-1.webp'
 
 const Contact = () => {
 
@@ -35,7 +36,7 @@ const Contact = () => {
     <div className='contact'>
       <Navbar />
       <div className="shop__hero">
-        <img src="https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp" alt="" />
+        <img src={img1} alt="" />
         <h1>Contact us</h1>
       </div>
       <div className="contact__content">

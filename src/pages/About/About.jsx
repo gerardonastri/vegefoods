@@ -6,7 +6,8 @@ import Footer from '../../components/Footer/Footer'
 import Testimony from '../../components/Testimony/Testimony'
 import {BsFillPlayFill} from 'react-icons/bs'
 import {AiOutlineClose} from 'react-icons/ai'
-
+import img1 from '../../images/featured-1.webp'
+import aboutImg from '../../images/about.webp'
 
 const About = () => {
     const [showVideo, setShowVideo] = useState(false)
@@ -15,13 +16,13 @@ const About = () => {
     <div className='about'>
         <Navbar />
         <div className="shop__hero">
-            <img src="https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp" alt="" />
+            <img src={img1} alt="" />
             <h1>about us</h1>
         </div>
         <div className="about__content">
             <div className="wrapper">
                 <div className="videoPlayer">
-                    <img src="https://preview.colorlib.com/theme/vegefoods/images/xabout.jpg.pagespeed.ic.qWh5f3ofqJ.webp" alt="" />
+                    <img src={aboutImg} alt="" />
                     <span onClick={() => setShowVideo(true)}><BsFillPlayFill /></span>
                 </div>
                 <div className="about__info">

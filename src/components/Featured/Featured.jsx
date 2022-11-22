@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import './Featured.css'
+import img1 from '../../images/featured-1.webp'
+import img2 from '../../images/featured-2.webp'
 
 const Featured = () => {
     const [currentSlider, setCurrentSlider] = useState(0)
@@ -8,12 +10,12 @@ const Featured = () => {
         {
             title: "100% Fresh & Organic Foods",
             subtitle: "We deliver organic vegetables & fruits",
-            img: "https://preview.colorlib.com/theme/vegefoods/images/xbg_2.jpg.pagespeed.ic.TiulCkAOXN.webp"
+            img: img1
         },
         {
             title: "We serve Fresh Vegestables & Fruits",
             subtitle: "We deliver organic vegetables & fruits",
-            img: "https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp"
+            img: img2
         }
     ]
 

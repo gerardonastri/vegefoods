@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer'
 import Posts from '../../components/Posts/Posts'
 import Newsletter from '../../components/Newsletter/Newsletter'
 import BlogSidebar from '../../components/BlogSidebar/BlogSidebar'
+import img1 from '../../images/featured-1.webp'
 
 
 const blog = () => {
@@ -12,7 +13,7 @@ const blog = () => {
     <div className=''>
         <Navbar />
         <div className="shop__hero">
-            <img src="https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp" alt="" />
+            <img src={img1} alt="" />
             <h1>blog</h1>
         </div>
         <div className="blog__content">

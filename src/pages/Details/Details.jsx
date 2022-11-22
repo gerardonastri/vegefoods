@@ -9,6 +9,8 @@ import { axiosReq } from '../../utils/apiCalls'
 import Rating from '@mui/material/Rating';
 import { addProduct } from '../../redux/cartRedux';
 import { useDispatch } from 'react-redux';
+import img1 from '../../images/featured-1.webp'
+
 
 const Details = () => {
   const [value, setValue] = useState(3)
@@ -40,7 +42,7 @@ const Details = () => {
     <div className='details'>
       <Navbar />
       <div className="shop__hero">
-        <img src="https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp" alt="" />
+        <img src={img1} alt="" />
         <h1>Product</h1>
         </div>
       <div className="details__product">
